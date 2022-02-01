@@ -12,7 +12,7 @@ const texts = {
   l: '24px',
 };
 
-export default ({ name }) => {
+const Hello = ({ name }) => {
   const [color, setColor] = useState(colors.Sea);
   const [text, setText] = useState(texts.s);
 
@@ -29,17 +29,17 @@ export default ({ name }) => {
       <h1>Hello {name}!</h1>
 
       <select value={color} onChange={(e) => setColor(e.target.value)}>
-        {Object.entries(colors).map(([name, value]) => (
-          <option key={`color--${name}`} value={value}>
-            {name}
+        {Object.entries(colors).map(([design, value]) => (
+          <option key={`color--${design}`} value={value}>
+            {design}
           </option>
         ))}
       </select>
 
       <select value={text} onChange={(e) => setText(e.target.value)}>
-        {Object.entries(texts).map(([name, value]) => (
-          <option key={`text--${name}`} value={value}>
-            {name}
+        {Object.entries(texts).map(([n, value]) => (
+          <option key={`text--${n}`} value={value}>
+            {n}
           </option>
         ))}
       </select>
@@ -49,3 +49,5 @@ export default ({ name }) => {
     </Fragment>
   );
 };
+
+export default Hello;
