@@ -25,7 +25,7 @@ h1 {
 
 .boxes {
   display: block;
-  border: 2px solid lighten(gray, 40%);
+  border: 2px solid gray;
   padding: 1vh 2vw;
   max-width: 600px;
   height: 400px;
