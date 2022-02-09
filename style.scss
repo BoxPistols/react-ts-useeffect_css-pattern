@@ -22,3 +22,22 @@ select {
 h1 {
   color: #fff;
 }
+
+// Box
+
+.boxes {
+  display: block;
+  border: 2px solid lighten(gray, 40%);
+  padding: 1vh 2vw;
+  max-width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 2vh;
+  overflow: hidden;
+  .flexBox {
+    margin: 1vw;
+    border: 2px solid gray;
+    padding: 1em 2em;
+    border-radius: 1em;
+  }
+}
