@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import StylingList from './StylingList';
 import './style.css';
 
 interface AppProps {}
@@ -11,7 +11,7 @@ interface AppState {
 const App = () => {
   return (
     <div>
-      <Hello name={name} />
+      <StylingList name={name} />
       <p>Start editing to see some magic happen </p>
     </div>
   );
