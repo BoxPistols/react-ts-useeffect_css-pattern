@@ -416,11 +416,11 @@
   /**
    * The font size
    */
-  "editor.fontSize": 17,
+  "editor.fontSize": 12,
   /**
    * The line height
    */
-  "editor.lineHeight": 22
+  "editor.lineHeight": 15
   /**
    * The letter spacing
    */
